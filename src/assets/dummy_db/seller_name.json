@@ -1,0 +1,43 @@
+{
+	"status": "OK",
+	"copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+	"num_results": 59,
+	"results": [
+				{
+					"list_name": "Combined Print and E-Book Fiction",
+					"display_name": "Combined Print & E-Book Fiction",
+					"list_name_encoded": "combined-print-and-e-book-fiction",
+					"oldest_published_date": "2011-02-13",
+					"newest_published_date": "2021-07-02",
+					"updated": "WEEKLY"
+				},{
+					"list_name": "Advice How-To and Miscellaneous",
+					"display_name": "Advice, How-To & Miscellaneous",
+					"list_name_encoded": "advice-how-to-and-miscellaneous",
+					"oldest_published_date": "2013-04-28",
+					"newest_published_date": "2021-07-03",
+					"updated": "WEEKLY"
+				},{
+					"list_name": "Hardcover Graphic Books",
+					"display_name": "Hardcover Graphic Books",
+					"list_name_encoded": "hardcover-graphic-books",
+					"oldest_published_date": "2009-03-15",
+					"newest_published_date": "2017-01-29",
+					"updated": "WEEKLY"
+				},{
+					"list_name": "Travel",
+					"display_name": "Travel",
+					"list_name_encoded": "travel",
+					"oldest_published_date": "2014-09-07",
+					"newest_published_date": "2017-01-15",
+					"updated": "MONTHLY"
+				},{
+					"list_name": "Young Adult Paperback Monthly",
+					"display_name": "Young Adult Paperback",
+					"list_name_encoded": "young-adult-paperback-monthly",
+					"oldest_published_date": "2019-10-13",
+					"newest_published_date": "2021-06-13",
+					"updated": "MONTHLY"
+				}
+			]
+}

@@ -1,0 +1,101 @@
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img [src]="'../assets/images/'+bookDetails.book_details[0].image" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h2><span class="book-rank pull-right">Rank : {{ bookDetails.rank }}</span> {{ bookDetails.book_details[0].title }} </h2>
+                        <p> {{ bookDetails.book_details[0].description }}</p>
+                        <p>{{ bookDetails.book_details[0].contributor }}</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="control-label">Published :
+										{{ bookDetails.published_date | date:'MMM d, y'}}</label>
+                                </div>
+                                <div class="row">
+                                    <label class="">Ranked last week :
+										{{ bookDetails.rank_last_week }}</label>
+                                </div>
+                                <div class="row">
+                                    <label class="control-label">Weeks on list :
+										{{ bookDetails.weeks_on_list }}</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="pull-right" (click)="addToqueue()">Add to Queue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <h2 class="h2">Review Links</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="control-label"><a
+									[href]="(bookDetails.book_review_link) ? bookDetails.book_review_link : 'javascript:viod(0);'">Book
+									Review Link</a></label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class=""><a
+									[href]="(bookDetails.first_chapter_link) ? bookDetails.first_chapter_link : 'javascript:viod(0);'">First
+									Chapter Link</a></label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label"><a
+									[href]="(bookDetails.sunday_review_link) ? bookDetails.sunday_review_link : 'javascript:viod(0);'">Sunday
+									Review Link</a></label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label"><a
+									[href]="(bookDetails.article_chapter_link) ? bookDetails.article_chapter_link : 'javascript:viod(0);'">Article
+									Chapter Link</a></label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <h2 class="h2">Similar Books</h2>
+                    <!-- Books -->
+                    <section class="tiles">
+                        <article class="style1">
+                            <span class="image">
+								<img src="../assets/images/product-1-720x480.jpg" alt="">
+							</span>
+                            <a href="javascript:void(0);">
+                                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                                <p><del>$19.00</del> <strong>$19.00</strong></p>
+                                <p>Vestibulum id est eu felis vulputate hendrerit uspendisse dapibus turpis in </p>
+                            </a>
+                        </article>
+                        <article class="style2">
+                            <span class="image">
+								<img src="../assets/images/product-2-720x480.jpg" alt="">
+							</span>
+                            <a href="javascript:void(0);">
+                                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                                <p><del>$19.00</del> <strong>$19.00</strong></p>
+                                <p>Vestibulum id est eu felis vulputate hendrerit uspendisse dapibus turpis in </p>
+                            </a>
+                        </article>
+                        <article class="style3">
+                            <span class="image">
+								<img src="../assets/images/product-6-720x480.jpg" alt="">
+							</span>
+                            <a href="javascript:void(0);">
+                                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                                <p><del>$19.00</del> <strong>$19.00</strong></p>
+                                <p>Vestibulum id est eu felis vulputate hendrerit uspendisse dapibus turpis in </p>
+                            </a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>

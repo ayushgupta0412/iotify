@@ -1,0 +1,67 @@
+<div id="wrapper">
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <h1>NY Times Best Seller Books</h1>
+            <div class="image main">
+                <img src="../assets/images/banner-image-1-1920x500.jpg" class="img-fluid" alt="" />
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div class="row border-bottom" *ngIf="activeName.display_name">
+                            <div class="col-sm-4">
+                                <label class="control-label border-bottom">Name of the list :</label>
+                                <p>{{ activeName.display_name }}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="control-label border-bottom">Updated on:</label>
+                                <p>{{ updatedOn }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Products -->
+            <div class="row">
+                <div class="col-md-3">
+                    <section id="sidebar">
+                        <h6 class="p-1 no-margin">
+                            Filter By
+                        </h6>
+                        <div>
+                            <p class="mb-2 border-bottom">Seller Name</p>
+                            <ul class="ul-filter">
+                                <li *ngFor="let name of nameList" class="border-bottom">
+                                    <a href="javascript:void(0);" [ngClass]="{ 'active-filter': name.display_name == activeName.display_name}" (click)="filterList(name.display_name, name.newest_published_date); activeName=name">{{
+                    name.display_name }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-9">
+                    <section class="tiles" *ngIf="booksList.length > 0">
+                        <article class="style1" *ngFor="let book of booksList; let index=i">
+                            <span class="image">
+                <img [src]="'../assets/images/'+book.book_details[0].image" alt="" />
+              </span>
+                            <a href="javascript:void(0);" [routerLink]="'/detail/'+book.book_details[0].primary_isbn10">
+                                <h2>{{ book.book_details[0].title }}</h2>
+                                <p><strong>- {{ book.book_details[0].author }}</strong></p>
+                                <p>
+                                    {{ book.book_details[0].description }}
+                                </p>
+                            </a>
+                        </article>
+                    </section>
+                    <section class="tiles" *ngIf="booksList.length == 0">
+
+                        <article class="style1 no-data">
+                            <h2>No Book Found Select Another Seller..</h2>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

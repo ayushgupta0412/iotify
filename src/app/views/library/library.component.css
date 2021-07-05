@@ -1,0 +1,32 @@
+.tiles article {
+    font-size: 10px;
+}
+
+button {
+    position: absolute;
+    top: 104%;
+}
+
+.img-bnr {
+    height: 225px;
+}
+
+#sidebar {
+    border: 10px solid #f7f7f7;
+    padding: 10px
+}
+
+.no-margin {
+    margin: 0px !important
+}
+
+.ul-filter {
+    margin: 0 0 1em 0;
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+.no-data {
+    width: 100%;
+    font-style: italic;
+}

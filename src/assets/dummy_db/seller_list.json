@@ -1,0 +1,76 @@
+{
+	"status": "OK",
+	"copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+	"num_results": 10,
+	"last_modified": "2019-08-29T20:54:03-04:00",
+		"results": [{
+						"list_name": "Hardcover Graphic Books",
+						"display_name": "Hardcover Graphic Books",
+						"bestsellers_date": "2017-01-14",
+						"published_date": "2017-01-29",
+						"rank": 1,
+						"rank_last_week": 0,
+						"weeks_on_list": 1,
+						"asterisk": 0,
+						"dagger": 0,
+						"amazon_product_url": "https:\/\/www.amazon.com\/Kindred-Graphic-Adaptation-Damian-Duffy\/dp\/141970947X?tag=NYTBSREV-20",
+						"isbns": [{
+									"isbn10": "141970947X",
+									"isbn13": "9781419709470"
+						}],
+						"book_details": [{
+									"title": "KINDRED",
+									"description": "A woman travels through time — from the 1970s to the pre-Civil War era — in this adaptation of Butler’s 1979 novel.",
+									"contributor": "by Octavia E. Butler, Damian Duffy and John Jennings",
+									"author": "Octavia E Butler, Damian Duffy and John Jennings",
+									"contributor_note": "",
+									"price": "0.00",
+									"age_group": "",
+									"publisher": "Abrams",
+									"primary_isbn13": "9781419709470",
+									"primary_isbn10": "141970947X",
+                  "image": "product-1-720x480.jpg"
+						}],
+						"reviews": [{
+									"book_review_link": "",
+									"first_chapter_link": "",
+									"sunday_review_link": "",
+									"article_chapter_link": ""
+						}]
+					},{
+
+						"list_name": "Hardcover Graphic Books",
+						"display_name": "Hardcover Graphic Books",
+						"bestsellers_date": "2017-01-14",
+						"published_date": "2017-01-29",
+						"rank": 6,
+						"rank_last_week": 0,
+						"weeks_on_list": 32,
+						"asterisk": 0,
+						"dagger": 0,
+						"amazon_product_url": "http:\/\/www.amazon.com\/Nathan-Hales-Hazardous-Tales-All-Stars\/dp\/1419719025?tag=NYTBSREV-20",
+						"isbns": [{
+									"isbn10": "1419719025",
+									"isbn13": "9781419719028"
+								}],
+						"book_details": [{
+									"title": "NATHAN HALE’S HAZARDOUS TALES: ALAMO ALL–STARS",
+									"description": "The Texas Revolution is the latest subject in this nonfiction series.",
+									"contributor": "by Nathan Hale",
+									"author": "Nathan Hale",
+									"contributor_note": "",
+									"price": "0.00",
+									"age_group": "",
+									"publisher": "Abrams",
+									"primary_isbn13": "9781419719028",
+									"primary_isbn10": "1419719025",
+                  "image": "product-2-720x480.jpg"
+								}],
+						"reviews": [{
+									"book_review_link": "",
+									"first_chapter_link": "",
+									"sunday_review_link": "",
+									"article_chapter_link": ""
+								}]
+					}]
+}
